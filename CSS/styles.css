@@ -218,15 +218,15 @@ input[type="submit"]:hover {
   /* display: inline-block; */
   float: right;
   text-align: center;
-  margin: 1% auto 1%;
+  margin: 0.5% auto 0.5%;
 }
 
 .sticky .logo {
   display: none;
 }
 .sticky .sticky-logo {
-  padding: 0.3%;
-  width: 4%;
+  padding: 0.1%;
+  width: 3%;
   display: inline-block;
   margin-right: 4%;
 }
