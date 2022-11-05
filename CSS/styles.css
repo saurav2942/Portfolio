@@ -238,6 +238,7 @@ Project-Section
 .work-section {
   width: 100%;
   padding: 2%;
+  color: #fff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./img/project_background.jpg);
   background-size: cover;
@@ -286,6 +287,11 @@ Project-Section
 .project img:hover {
   opacity: 1;
   transform: scale(1.03);
+}
+
+.project-description-list {
+  text-align: left;
+  word-spacing: 1px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------
@@ -384,14 +390,16 @@ Exp-Section
 
 .exp-section {
   width: 100%;
+  color: #fff;
   padding: 2%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./img/EXP.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 80vh;
+  height: 90vh;
   position: relative;
+  word-spacing: 1px;
 }
 
 .exp-section h1,
