@@ -218,7 +218,7 @@ input[type="submit"]:hover {
   /* display: inline-block; */
   float: right;
   text-align: center;
-  margin: 0.9% auto 0.5%;
+  margin: 0.7% auto 0.5%;
 }
 
 .sticky .logo {
@@ -237,8 +237,8 @@ Project-Section
 
 .work-section {
   width: 100%;
-  padding: 2%;
   color: #fff;
+  padding: 2%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./img/project_background.jpg);
   background-size: cover;
@@ -397,7 +397,7 @@ Exp-Section
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   word-spacing: 1px;
 }
