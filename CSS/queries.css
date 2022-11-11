@@ -47,6 +47,10 @@
     right: 5%;
   }
 
+  /* .work-section {
+    height: 120vh;
+  } */
+
   /* Education Section */
 
   .educations {
@@ -59,6 +63,10 @@
   }
 
   /* Skills Section */
+
+  .skill-section {
+    height: 110vh;
+  }
 
   .skill-section h1 {
     font-size: 2.5rem;
@@ -234,7 +242,7 @@
   /* Project Section */
 
   .work-section {
-    height: 130vh;
+    height: 160vh;
   }
 
   .project {
@@ -458,7 +466,7 @@
   /* Experience Section */
 
   .exp-section {
-    height: 90vh;
+    height: 120vh;
   }
   .exp-item div {
     width: 100%;
