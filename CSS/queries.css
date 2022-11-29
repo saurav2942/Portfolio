@@ -198,7 +198,7 @@
   }
 
   .sticky .mobile-nav-icon {
-    margin: 2% 0 2% 1%;
+    margin: 2% 2% 2% 1%;
   }
 
   .sticky .mobile-nav-icon i {
@@ -209,8 +209,8 @@
   .sticky .sticky-logo {
     width: 7%;
     position: absolute;
-    top: 1%;
-    left: 1%;
+    top: 7%;
+    left: 2%;
   }
 
   .sticky .main_nav {
@@ -397,20 +397,32 @@
   }
 
   .header-heading .first-btn {
+    font-size: 1.3rem;
     position: absolute;
     bottom: 20%;
     right: 55%;
   }
   .header-heading .second-btn {
+    font-size: 1.3rem;
     position: absolute;
     bottom: 20%;
     right: 5%;
   }
 
+  /* Work - Section */
+
+  .work-section {
+    height: 170vh;
+  }
+
+  .projects :last-child {
+    margin-top: 5%;
+  }
+  
   /* Education Section */
 
   .education-section {
-    height: 100vh;
+    height: 95vh;
   }
 
   .educations {
@@ -435,7 +447,10 @@
   }
 
   /* Skills Section */
-
+  .skill-section {
+    height: 90vh;
+  }
+  
   .skill-item1 {
     width: 100%;
   }
@@ -466,7 +481,7 @@
   /* Experience Section */
 
   .exp-section {
-    height: 120vh;
+    height: 115vh;
   }
   .exp-item div {
     width: 100%;
@@ -483,7 +498,7 @@
   }
   /* Hobbies And Achivement Section */
   .hobbie-section {
-    height: 100vh;
+    height: 95vh;
   }
 
   /*------------------------------------------------------------------------------
