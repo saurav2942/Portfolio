@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import ReactDom from "react-dom/client";
-import App from "./src/Components/App";
-import ProjectsPage from "./src/Components/ProjectsPage";
-import Body from "./src/Components/Body";
-import Resume from "./src/Components/Resume";
+import App from "./src/components/App";
+import ProjectsPage from "./src/components/ProjectsPage";
+import Body from "./src/components/Body";
+import Resume from "./src/components/Resume";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const appRouter = createBrowserRouter([
