@@ -127,39 +127,43 @@ const Resume = () => {
       {/* Details */}
       <div className="leading-[1] mt-6 max-w-screen-lg md:flex mx-auto">
         <div className="md:w-1/3 p-2">
-          <div className="md:block ">
-            <img className="h-20 w-20 mx-auto rounded-lg " src={Icon}></img>
-            <div className="mb-12 text-center mt-4 justify-center items-left mx-4 text-Inconsolata">
-              <h1 className="text-xl text-gray-700 font-bold text-Inconsolata">
-                Saurav Mathuriya
-              </h1>
-              <div className="md:text-sm text-gray-600">Software Engineer</div>
-            </div>
-          </div>
-          <div className="flex justify-evenly md:block">
-            <div className="my-5 mx-2 text-sm text-gray-600 flex">
-              <div className="mr-2">
-                <FontAwesomeIcon icon="fa-brands fa-github" />
+          <div className="md:fixed">
+            <div className="md:block ">
+              <img className="h-20 w-20 mx-auto rounded-lg " src={Icon}></img>
+              <div className="mb-12 text-center mt-4 justify-center items-left mx-4 text-Inconsolata">
+                <h1 className="text-xl text-gray-700 font-bold text-Inconsolata">
+                  Saurav Mathuriya
+                </h1>
+                <div className="md:text-sm text-gray-600">
+                  Software Engineer
+                </div>
               </div>
-              <a href="https://github.com/saurav2942" className="underline">
-                https://github.com/saurav2942
+            </div>
+            <div className="flex justify-evenly md:block">
+              <div className="my-5 mx-2 text-sm text-gray-600 flex">
+                <div className="mr-2">
+                  <FontAwesomeIcon icon="fa-brands fa-github" />
+                </div>
+                <a href="https://github.com/saurav2942" className="underline">
+                  https://github.com/saurav2942
+                </a>
+              </div>
+              <div className="my-5 mx-2 text-sm text-gray-600 flex">
+                <div className="mr-2">
+                  <FontAwesomeIcon icon="fa-solid fa-location-dot" />
+                </div>
+                Jaipur, Rajasthan
+              </div>
+              <a
+                href="https://www.linkedin.com/in/saurav2942/"
+                className="my-5 mx-2 text-sm text-gray-600 flex"
+              >
+                <div className="mr-2">
+                  <FontAwesomeIcon icon="fa-brands fa-linkedin-in" />
+                </div>
+                Linkedin
               </a>
             </div>
-            <div className="my-5 mx-2 text-sm text-gray-600 flex">
-              <div className="mr-2">
-                <FontAwesomeIcon icon="fa-solid fa-location-dot" />
-              </div>
-              Jaipur, Rajasthan
-            </div>
-            <a
-              href="https://www.linkedin.com/in/saurav2942/"
-              className="my-5 mx-2 text-sm text-gray-600 flex"
-            >
-              <div className="mr-2">
-                <FontAwesomeIcon icon="fa-brands fa-linkedin-in" />
-              </div>
-              Linkedin
-            </a>
           </div>
         </div>
         <div className="md:w-2/3 p-2 w-full sm:border-l-2">
