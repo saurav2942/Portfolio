@@ -185,7 +185,7 @@ const Resume = () => {
                       style={{ color: "rgb(102, 102, 102)" }}
                     ></i>
                     <small className="text-base text-gray-700">
-                      B.Tech Mining Engineering
+                      Bachelor Of Technology
                     </small>
                   </div>
                   <div>
