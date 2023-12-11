@@ -16,7 +16,7 @@ import Project from "./Project";
 
 const Body = () => {
   return (
-    <div className="noise bg-[#000] min-h-screen m-0 p-5">
+    <div className="bg-[#000] min-h-screen m-0 p-5">
       <div className="grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-4 my-5 container mx-auto xl:px-20">
         {/* {Header} */}
         <Header />
