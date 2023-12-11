@@ -10,7 +10,7 @@ const Shimmer = () => {
 
         <div className="col-span-1 aspect-square bg-gray-200 rounded-3xl overflow-hidden"></div>
         <div className="col-span-1 aspect-square bg-gray-200 rounded-3xl overflow-hidden"></div>
-        <div className="col-span-2 aspect bg-gray-200 rounded-3xl overflow-hidden"></div>
+        <div className="col-span-2 aspect-auto bg-gray-200 rounded-3xl overflow-hidden"></div>
       </div>
     </div>
   );
