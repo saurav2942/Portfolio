@@ -1,27 +1,45 @@
-import React, { Component } from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDom from "react-dom/client";
-import App from "./src/components/App";
-import ProjectsPage from "./src/components/ProjectsPage";
-import Body from "./src/components/Body";
-import Resume from "./src/components/Resume";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Shimmer from "./src/components/Shimmer";
+
+const App = lazy(() => import("./src/components/App"));
+const ProjectsPage = lazy(() => import("./src/components/ProjectsPage"));
+const Body = lazy(() => import("./src/components/Body"));
+const Resume = lazy(() => import("./src/components/Resume"));
 
 const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <Suspense fallback={<Shimmer />}>
+        <App />
+      </Suspense>
+    ),
     children: [
       {
         path: "/",
-        element: <Body />,
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Body />
+          </Suspense>
+        ),
       },
       {
         path: "/projects",
-        element: <ProjectsPage />,
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <ProjectsPage />
+          </Suspense>
+        ),
       },
       {
         path: "/resume",
-        element: <Resume />,
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Resume />
+          </Suspense>
+        ),
       },
     ],
   },
