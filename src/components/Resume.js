@@ -367,7 +367,13 @@ const Resume = () => {
                   JavaScript
                 </span>
                 <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                  Tailwind CSS/Bootstrap
+                  Tailwind CSS
+                </span>
+                <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                  BootStrap
+                </span>
+                <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                  Material UI
                 </span>
                 <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
                   Node.js
