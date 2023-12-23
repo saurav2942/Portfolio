@@ -129,11 +129,145 @@ const Projects = () => {
               target="blank"
               className="bg-black rounded-md px-4 py-1 text-white scale-100 transition duration-300 ease-in-out hover:scale-105"
             >
-              Github
+              Gitub
             </a>
           </div>
           <div className="mx-auto w-full max-w-5xl">
             <ul className="flex flex-col">
+              <li className="border-b-2 border-gray-100">
+                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/8014/8014428.png"
+                      alt=""
+                      className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
+                    ></img>
+                    <div className="space-y-1">
+                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                        Portfolio
+                      </p>
+                      <p className="text-sm text-gray-500 font-medium">
+                        Created a personalized portfolio application from
+                        scratch using React.js as the core framework, allowing
+                        for a dynamic and responsive user interface.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="pr-4 flex flex-col justify-between items-end">
+                    <div>
+                      <div className="relative">
+                        <a
+                          href="https://sauravmathuriya.netlify.app/"
+                          className="text-base text-black  underline hover:text-base  decoration-2 py-1 px-2 rounded-sm transition hover:decoration-wavy delay-150 duration-700 font-bold"
+                        >
+                          Link
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="border-b-2 border-gray-100">
+                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/6858/6858037.png"
+                      alt=""
+                      className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
+                    ></img>
+                    <div className="space-y-1">
+                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                        Blog App
+                      </p>
+                      <p className="text-sm text-gray-500 font-medium">
+                        Developed a robust and scalable blog application using
+                        React.js and Create React App, showcasing expertise in
+                        front-end development. And by leveraging its
+                        component-based architecture to build a user-friendly
+                        and responsive blog app interface
+                      </p>
+                    </div>
+                  </div>
+                  <div className="pr-4 flex flex-col justify-between items-end">
+                    <div>
+                      <div className="relative">
+                        <a
+                          href="https://saurav-blog-app.netlify.app/"
+                          className="text-base text-black  underline hover:text-base  decoration-2 py-1 px-2 rounded-sm transition hover:decoration-wavy delay-150 duration-700 font-bold"
+                        >
+                          Link
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="border-b-2 border-gray-100">
+                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/256/7603/7603441.png"
+                      alt=""
+                      className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
+                    ></img>
+                    <div className="space-y-1">
+                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                        E-Cart
+                      </p>
+                      <p className="text-sm text-gray-500 font-medium">
+                        Developed a robust and scalable Ecommerce application
+                        using React.js and Create React App, showcasing
+                        expertise in front-end development. Used FakeStore API
+                        To get Products and showcase them.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="pr-4 flex flex-col justify-between items-end">
+                    <div>
+                      <div className="relative">
+                        <a
+                          href="https://saurav-ecart-app.netlify.app/"
+                          className="text-base text-black  underline hover:text-base  decoration-2 py-1 px-2 rounded-sm transition hover:decoration-wavy delay-150 duration-700 font-bold"
+                        >
+                          Link
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="border-b-2 border-gray-100">
+                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/8293/8293571.png"
+                      alt=""
+                      className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
+                    ></img>
+                    <div className="space-y-1">
+                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                        SearchMyGit
+                      </p>
+                      <p className="text-sm text-gray-500 font-medium">
+                        An React App Implemented Using Github User API to fetch
+                        Searched User Details and Showcasing it.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="pr-4 flex flex-col justify-between items-end">
+                    <div>
+                      <div className="relative">
+                        <a
+                          href="https://searchmygit.netlify.app/"
+                          className="text-base text-black  underline hover:text-base  decoration-2 py-1 px-2 rounded-sm transition hover:decoration-wavy delay-150 duration-700 font-bold"
+                        >
+                          Link
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li className="border-b-2 border-gray-100">
                 <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
                   <div className="sm:pl-4 pr-8 flex sm:items-center">
