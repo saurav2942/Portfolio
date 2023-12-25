@@ -129,7 +129,7 @@ const Projects = () => {
               target="blank"
               className="bg-black rounded-md px-4 py-1 text-white scale-100 transition duration-300 ease-in-out hover:scale-105"
             >
-              Gitub
+              Github
             </a>
           </div>
           <div className="mx-auto w-full max-w-5xl">
