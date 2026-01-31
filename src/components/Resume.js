@@ -24,7 +24,7 @@ library.add(
 );
 import { Link } from "react-router-dom";
 // import Icon from "../assets/icon.png";
-const Icon = new URL("../assets/icon2.png", import.meta.url);
+const Icon = new URL("../assets/image.png", import.meta.url);
 
 const Dots = () => {
   return (
