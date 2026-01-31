@@ -129,7 +129,10 @@ const Resume = () => {
         <div className="md:w-1/3 p-2">
           <div className="md:fixed">
             <div className="md:block ">
-              <img className="h-20 w-20 mx-auto rounded-lg " src={Icon}></img>
+              <img
+                className="h-28 w-28 mx-auto rounded-full object-cover object-[50%_20%] scale-[1]"
+                src={Icon}
+              ></img>
               <div className="mb-12 text-center mt-4 justify-center items-left mx-4 text-Inconsolata">
                 <h1 className="text-xl text-gray-700 font-bold text-Inconsolata">
                   Saurav Mathuriya
