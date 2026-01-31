@@ -30,6 +30,8 @@ const Social = (props) => {
   const iconClass =
     props.iconSize ||
     "text-[2rem] sm:text-[5rem] md:text-[6rem] lg:text-[7rem]";
+  const imgClass =
+    props.imgSize || "w-[2rem] sm:w-[5rem] md:w-[6rem] lg:w-[7rem]";
   return (
     <>
       <a
@@ -48,12 +50,12 @@ const Social = (props) => {
         ) : props.name === "leetcode" ? (
           <img
             src={Leetcode_PNG}
-            className="w-[2rem] sm:w-[5rem] md:w-[6rem] lg:w-[7rem]"
+            className={imgClass}
           ></img>
         ) : (
           <img
             src={Codechef_PNG}
-            className="w-[2rem] sm:w-[5rem] md:w-[6rem] lg:w-[7rem]"
+            className={imgClass}
           ></img>
         )}
         <img

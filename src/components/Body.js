@@ -76,6 +76,7 @@ const Body = () => {
           type="codechef"
           bg="bg-[#ffffff]"
           col="#171717"
+          imgSize="w-[2.5rem] sm:w-[5.5rem] md:w-[6.5rem] lg:w-[7.5rem]"
         />
       </div>
       <Footer />
