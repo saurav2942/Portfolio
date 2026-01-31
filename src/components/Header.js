@@ -2,7 +2,8 @@ import React from "react";
 // import img from "../assets/icon.png";
 // import Noise from "../assets/noise.gif";
 
-const img = new URL("../assets/icon.png", import.meta.url);
+// const img = new URL("../assets/icon.png", import.meta.url);
+const img = new URL("../assets/icon2.JPEG", import.meta.url);
 const Noise = new URL("../assets/noise.gif", import.meta.url);
 
 const Header = () => {
