@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="relative col-span-3 aspect-square md:aspect-auto md:row-span-2 bg-[#af72ff56] rounded-3xl overflow-hidden">
       <div className="h-full  absolute  p-4 md:p-8 flex flex-col justify-start  md:justify-end">
-        <div className="w-28 h-28 md:w-24 md:h-24 lg:w-40 lg:h-40 mb-4 rounded-full overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
+        <div className="w-28 h-28 md:w-24 md:h-24 lg:w-40 lg:h-40 mb-4 rounded-full overflow-hidden">
           <img
             className="w-full h-full object-cover object-[50%_20%] scale-[1]"
             src={img}
