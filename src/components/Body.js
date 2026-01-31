@@ -40,8 +40,9 @@ const Body = () => {
           // name="fa-twitter"
           name="fa-instagram"
           type="brand"
-          bg="bg-[#171717]"
+          bg="bg-[linear-gradient(45deg,_#f09433_0%,_#e6683c_25%,_#dc2743_50%,_#cc2366_75%,_#bc1888_100%)]"
           col="#ffffff"
+          iconSize="text-[2.5rem] sm:text-[5.5rem] md:text-[6.5rem] lg:text-[7.5rem]"
         />
         {/* Medium  */}
         <Social

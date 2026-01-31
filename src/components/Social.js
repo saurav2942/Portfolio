@@ -27,6 +27,9 @@ import { Codechef_PNG, Leetcode_PNG } from "../config";
 const Noise = new URL("../assets/noise.gif", import.meta.url);
 
 const Social = (props) => {
+  const iconClass =
+    props.iconSize ||
+    "text-[2rem] sm:text-[5rem] md:text-[6rem] lg:text-[7rem]";
   return (
     <>
       <a
@@ -38,7 +41,7 @@ const Social = (props) => {
       >
         {props.type === "brand" ? (
           <FontAwesomeIcon
-            className="text-[2rem] sm:text-[5rem] md:text-[6rem] lg:text-[7rem]"
+            className={iconClass}
             icon={"fab " + props.name}
             style={{ color: props.col }}
           />
