@@ -6,6 +6,7 @@ import {
   Linkedin_URL,
   Medium_URL,
   Twitter_URL,
+  Instagram_URL,
 } from "../config";
 import CvCard from "./CvCard";
 import Header from "./Header";
@@ -34,8 +35,10 @@ const Body = () => {
         />
         {/* Twitter  */}
         <Social
+          // URL={Twitter_URL}
           URL={Twitter_URL}
-          name="fa-twitter"
+          // name="fa-twitter"
+          name="fa-instagram"
           type="brand"
           bg="bg-[#171717]"
           col="#ffffff"

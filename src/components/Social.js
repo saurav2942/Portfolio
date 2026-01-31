@@ -15,9 +15,10 @@ library.add(
   fas,
   faLinkedinIn,
   faTwitter,
+  faInstragram,
   faFilePdf,
   faMediumM,
-  faExternalLinkAlt
+  faExternalLinkAlt,
 );
 
 import { Codechef_PNG, Leetcode_PNG } from "../config";
