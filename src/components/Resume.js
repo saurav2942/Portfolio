@@ -24,7 +24,7 @@ library.add(
 );
 import { Link } from "react-router-dom";
 // import Icon from "../assets/icon.png";
-const Icon = new URL("../assets/icon.png", import.meta.url);
+const Icon = new URL("../assets/icon2.png", import.meta.url);
 
 const Dots = () => {
   return (
@@ -499,8 +499,11 @@ const Resume = () => {
             <hr className="my-6 border-gray-200 sm:mx-auto lg:my-4"></hr>
             <p className="flex justify-center text-sm text-black text-center my-4">
               Designed by&nbsp;
-              <a href="https://enjae.netlify.app/" className="hover:underline">
-                enjae™
+              <a
+                href="https://www.linkedin.com/in/saurav2942/"
+                className="hover:underline"
+              >
+                Saurav™
               </a>
             </p>
           </div>
