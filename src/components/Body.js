@@ -36,7 +36,7 @@ const Body = () => {
         {/* Twitter  */}
         <Social
           // URL={Twitter_URL}
-          URL={Twitter_URL}
+          URL={Instagram_URL}
           // name="fa-twitter"
           name="fa-instagram"
           type="brand"
