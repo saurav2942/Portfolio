@@ -56,63 +56,55 @@ const Projects = () => {
 
   return (
     <div
-      className="md:container md:mx-auto flex flex-col min-h-screen"
+      className="flex min-h-screen flex-col bg-slate-50 text-slate-900 [background-image:radial-gradient(1200px_circle_at_15%_-10%,rgba(14,165,233,0.12),transparent_60%),radial-gradient(900px_circle_at_90%_10%,rgba(34,197,94,0.12),transparent_60%)]"
       onClick={() => {
         clickOutHandler();
       }}
     >
       {/* Header */}
-      <header className="sticky md:relative bg-white md:w-full top-0 z-50 sm:px-16 px-0 flex justify-center items-center shadow-lg md:shadow-none">
-        <div className="xl:max-w-[1280px] w-full">
+      <header className="sticky top-0 z-50 w-full border-b border-slate-200/70 bg-white/80 backdrop-blur-md md:relative md:shadow-none">
+        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <nav className="w-full">
-            <div className="justify-center px-0 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 ">
-              <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <div className="mx-auto flex items-center justify-between py-3 md:py-5">
+              <div className="flex items-center justify-between md:block">
                 <div className="md:hidden">
                   <button
-                    className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                    className="rounded-full border border-slate-200 bg-white/70 p-2 text-slate-700 shadow-sm transition hover:text-slate-900"
                     onClick={() => clickHandler()}
                   >
                     <FontAwesomeIcon
-                      className="text-[2rem] mx-5 md:mx-0"
+                      className="mx-2 text-[1.6rem] md:mx-0"
                       icon={"fa-solid " + icon}
                     />
                   </button>
                 </div>
               </div>
-              <div>
-                <div
-                  className={
-                    "flex-1 justify-self-center pb-3 mt-0 md:mt-8 md:block md:pb-0 md:relative md:w-full bg-white absolute w-[40%] h-screen md:h-full md:shadow-none shadow " +
-                    isHidden
-                  }
-                >
-                  <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                    <li className="flex jusify-center items-center gap-1 mx-5 md:mx-0 text-gray-700 text-sm hover:text-gray-300">
-                      <FontAwesomeIcon icon="fa-solid fa-house" />
-                      <Link to="/" className="hover:underline">
-                        Home
-                      </Link>
-                    </li>
+              <div
+                className={
+                  "absolute left-0 top-full w-full border-b border-slate-200/70 bg-white/95 shadow-lg md:static md:w-auto md:border-b-0 md:bg-transparent md:shadow-none " +
+                  isHidden
+                }
+              >
+                <ul className="flex flex-col items-center gap-2 px-4 py-4 md:flex-row md:gap-4 md:px-0 md:py-0">
+                  <li className="flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-900">
+                    <FontAwesomeIcon icon="fa-solid fa-house" />
+                    <Link to="/">Home</Link>
+                  </li>
 
-                    <Dots />
+                  <Dots />
 
-                    <li className="flex jusify-center items-center gap-1 mx-5 md:mx-0 text-gray-700 text-sm hover:text-gray-300">
-                      <FontAwesomeIcon icon="fa-solid fa-file" />
-                      <Link to="/resume" className="hover:underline">
-                        Resume
-                      </Link>
-                    </li>
+                  <li className="flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-900">
+                    <FontAwesomeIcon icon="fa-solid fa-file" />
+                    <Link to="/resume">Resume</Link>
+                  </li>
 
-                    <Dots />
+                  <Dots />
 
-                    <li className="flex jusify-center items-center gap-1 mx-5 md:mx-0 text-gray-700 text-sm hover:text-gray-300">
-                      <FontAwesomeIcon icon="fa-solid fa-diagram-project" />
-                      <Link to="/projects" className="hover:underline">
-                        Projects
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+                  <li className="flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-900">
+                    <FontAwesomeIcon icon="fa-solid fa-diagram-project" />
+                    <Link to="/projects">Projects</Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </nav>
@@ -135,25 +127,25 @@ const Projects = () => {
           <div className="mx-auto w-full max-w-5xl">
             <ul className="flex flex-col">
               <li className="border-b-2 border-gray-100">
-                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
-                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                <div className="py-5 px-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-0 sm:pr-8 flex items-start sm:items-center gap-3 min-w-0">
                     <img
                       src="https://cdn-icons-png.flaticon.com/512/8014/8014428.png"
                       alt=""
                       className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
                     ></img>
-                    <div className="space-y-1">
-                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                    <div className="space-y-1 min-w-0">
+                      <p className="text-base text-gray-700 font-bold tracking-wide break-words">
                         Portfolio
                       </p>
-                      <p className="text-sm text-gray-500 font-medium">
+                      <p className="text-sm text-gray-500 font-medium break-words">
                         Created a personalized portfolio application from
                         scratch using React.js as the core framework, allowing
                         for a dynamic and responsive user interface.
                       </p>
                     </div>
                   </div>
-                  <div className="pr-4 flex flex-col justify-between items-end">
+                  <div className="sm:pr-4 flex sm:flex-col items-start sm:items-end">
                     <div>
                       <div className="relative">
                         <a
@@ -168,18 +160,18 @@ const Projects = () => {
                 </div>
               </li>
               <li className="border-b-2 border-gray-100">
-                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
-                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                <div className="py-5 px-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-0 sm:pr-8 flex items-start sm:items-center gap-3 min-w-0">
                     <img
                       src="https://cdn-icons-png.flaticon.com/512/6858/6858037.png"
                       alt=""
                       className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
                     ></img>
-                    <div className="space-y-1">
-                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                    <div className="space-y-1 min-w-0">
+                      <p className="text-base text-gray-700 font-bold tracking-wide break-words">
                         Blog App
                       </p>
-                      <p className="text-sm text-gray-500 font-medium">
+                      <p className="text-sm text-gray-500 font-medium break-words">
                         Developed a robust and scalable blog application using
                         React.js and Create React App, showcasing expertise in
                         front-end development. And by leveraging its
@@ -188,7 +180,7 @@ const Projects = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="pr-4 flex flex-col justify-between items-end">
+                  <div className="sm:pr-4 flex sm:flex-col items-start sm:items-end">
                     <div>
                       <div className="relative">
                         <a
@@ -203,18 +195,18 @@ const Projects = () => {
                 </div>
               </li>
               <li className="border-b-2 border-gray-100">
-                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
-                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                <div className="py-5 px-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-0 sm:pr-8 flex items-start sm:items-center gap-3 min-w-0">
                     <img
                       src="https://cdn-icons-png.flaticon.com/256/7603/7603441.png"
                       alt=""
                       className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
                     ></img>
-                    <div className="space-y-1">
-                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                    <div className="space-y-1 min-w-0">
+                      <p className="text-base text-gray-700 font-bold tracking-wide break-words">
                         E-Cart
                       </p>
-                      <p className="text-sm text-gray-500 font-medium">
+                      <p className="text-sm text-gray-500 font-medium break-words">
                         Developed a robust and scalable Ecommerce application
                         using React.js and Create React App, showcasing
                         expertise in front-end development. Used FakeStore API
@@ -222,7 +214,7 @@ const Projects = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="pr-4 flex flex-col justify-between items-end">
+                  <div className="sm:pr-4 flex sm:flex-col items-start sm:items-end">
                     <div>
                       <div className="relative">
                         <a
@@ -237,24 +229,24 @@ const Projects = () => {
                 </div>
               </li>
               <li className="border-b-2 border-gray-100">
-                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
-                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                <div className="py-5 px-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-0 sm:pr-8 flex items-start sm:items-center gap-3 min-w-0">
                     <img
                       src="https://cdn-icons-png.flaticon.com/512/8293/8293571.png"
                       alt=""
                       className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
                     ></img>
-                    <div className="space-y-1">
-                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                    <div className="space-y-1 min-w-0">
+                      <p className="text-base text-gray-700 font-bold tracking-wide break-words">
                         SearchMyGit
                       </p>
-                      <p className="text-sm text-gray-500 font-medium">
+                      <p className="text-sm text-gray-500 font-medium break-words">
                         An React App Implemented Using Github User API to fetch
                         Searched User Details and Showcasing it.
                       </p>
                     </div>
                   </div>
-                  <div className="pr-4 flex flex-col justify-between items-end">
+                  <div className="sm:pr-4 flex sm:flex-col items-start sm:items-end">
                     <div>
                       <div className="relative">
                         <a
@@ -269,24 +261,24 @@ const Projects = () => {
                 </div>
               </li>
               <li className="border-b-2 border-gray-100">
-                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
-                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                <div className="py-5 px-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-0 sm:pr-8 flex items-start sm:items-center gap-3 min-w-0">
                     <img
                       src="https://cdn-icons-png.flaticon.com/512/12415/12415049.png"
                       alt=""
                       className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
                     ></img>
-                    <div className="space-y-1">
-                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                    <div className="space-y-1 min-w-0">
+                      <p className="text-base text-gray-700 font-bold tracking-wide break-words">
                         Tic-Tac-Toe Game
                       </p>
-                      <p className="text-sm text-gray-500 font-medium">
+                      <p className="text-sm text-gray-500 font-medium break-words">
                         Multiplayer an user friendly UI game aimed to play
                         tic-tac-toe.
                       </p>
                     </div>
                   </div>
-                  <div className="pr-4 flex flex-col justify-between items-end">
+                  <div className="sm:pr-4 flex sm:flex-col items-start sm:items-end">
                     <div>
                       <div className="relative">
                         <a
@@ -301,24 +293,24 @@ const Projects = () => {
                 </div>
               </li>
               <li className="border-b-2 border-gray-100">
-                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
-                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                <div className="py-5 px-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-0 sm:pr-8 flex items-start sm:items-center gap-3 min-w-0">
                     <img
                       src="https://cdn-icons-png.flaticon.com/512/3771/3771296.png"
                       alt=""
                       className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
                     ></img>
-                    <div className="space-y-1">
-                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                    <div className="space-y-1 min-w-0">
+                      <p className="text-base text-gray-700 font-bold tracking-wide break-words">
                         Web Weather App
                       </p>
-                      <p className="text-sm text-gray-500 font-medium">
+                      <p className="text-sm text-gray-500 font-medium break-words">
                         Weather website aimed to show user the weather details
                         of user and specified location.
                       </p>
                     </div>
                   </div>
-                  <div className="pr-4 flex flex-col justify-between items-end">
+                  <div className="sm:pr-4 flex sm:flex-col items-start sm:items-end">
                     <div>
                       <div className="relative">
                         <a
@@ -333,24 +325,24 @@ const Projects = () => {
                 </div>
               </li>
               <li className="border-b-2 border-gray-100">
-                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
-                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                <div className="py-5 px-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-0 sm:pr-8 flex items-start sm:items-center gap-3 min-w-0">
                     <img
                       src="https://cdn-icons-png.flaticon.com/512/3256/3256783.png"
                       alt=""
                       className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
                     ></img>
-                    <div className="space-y-1">
-                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                    <div className="space-y-1 min-w-0">
+                      <p className="text-base text-gray-700 font-bold tracking-wide break-words">
                         Password Generator
                       </p>
-                      <p className="text-sm text-gray-500 font-medium">
+                      <p className="text-sm text-gray-500 font-medium break-words">
                         A website aimed to generate random passwwords according
                         to the specified parameters by user.
                       </p>
                     </div>
                   </div>
-                  <div className="pr-4 flex flex-col justify-between items-end">
+                  <div className="sm:pr-4 flex sm:flex-col items-start sm:items-end">
                     <div>
                       <div className="relative">
                         <a
@@ -365,24 +357,24 @@ const Projects = () => {
                 </div>
               </li>
               <li className="border-b-2 border-gray-100">
-                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
-                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                <div className="py-5 px-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-0 sm:pr-8 flex items-start sm:items-center gap-3 min-w-0">
                     <img
                       src="https://cdn-icons-png.flaticon.com/512/6092/6092312.png"
                       alt=""
                       className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
                     ></img>
-                    <div className="space-y-1">
-                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                    <div className="space-y-1 min-w-0">
+                      <p className="text-base text-gray-700 font-bold tracking-wide break-words">
                         Blast Design
                       </p>
-                      <p className="text-sm text-gray-500 font-medium">
+                      <p className="text-sm text-gray-500 font-medium break-words">
                         last semester project used to blast design in indian
                         mines according to user specified parameters.
                       </p>
                     </div>
                   </div>
-                  <div className="pr-4 flex flex-col justify-between items-end">
+                  <div className="sm:pr-4 flex sm:flex-col items-start sm:items-end">
                     <div>
                       <div className="relative">
                         <a
@@ -397,24 +389,24 @@ const Projects = () => {
                 </div>
               </li>
               <li className="border-b-2 border-gray-100">
-                <div className="py-5 px-4 flex justify-between border-l-4 border-transparent bg-transparent">
-                  <div className="sm:pl-4 pr-8 flex sm:items-center">
+                <div className="py-5 px-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-l-4 border-transparent bg-transparent">
+                  <div className="sm:pl-4 pr-0 sm:pr-8 flex items-start sm:items-center gap-3 min-w-0">
                     <img
                       src="https://cdn-icons-png.flaticon.com/512/562/562678.png"
                       alt=""
                       className="mr-3 w-8 sm:w-12 h-8 sm:h-12"
                     ></img>
-                    <div className="space-y-1">
-                      <p className="text-base text-gray-700 font-bold tracking-wide">
+                    <div className="space-y-1 min-w-0">
+                      <p className="text-base text-gray-700 font-bold tracking-wide break-words">
                         Tifi.com
                       </p>
-                      <p className="text-sm text-gray-500 font-medium">
+                      <p className="text-sm text-gray-500 font-medium break-words">
                         Food website aimed to showcase multiple food products,
                         catagories and there price.
                       </p>
                     </div>
                   </div>
-                  <div className="pr-4 flex flex-col justify-between items-end">
+                  <div className="sm:pr-4 flex sm:flex-col items-start sm:items-end">
                     <div>
                       <div className="relative">
                         <a
