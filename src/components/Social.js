@@ -15,7 +15,7 @@ library.add(
   fas,
   faLinkedinIn,
   faTwitter,
-  faInstragram,
+  faInstagram,
   faFilePdf,
   faMediumM,
   faExternalLinkAlt,
