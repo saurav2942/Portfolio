@@ -18,8 +18,8 @@ import Project from "./Project";
 const Body = () => {
   return (
     <div className="bg-[#000] min-h-screen m-0 p-5">
-      <div className="pl-10 pr-10">
-        <div className="grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-4 my-5 container mx-auto xl:px-20 pl-5 pr-5">
+      {/* <div className="pl-10 pr-10"> */}
+        <div className="grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-4 my-5 container mx-auto xl:px-20">
           {/* {Header} */}
           <Header />
           {/* Resume */}
@@ -79,7 +79,7 @@ const Body = () => {
             col="#171717"
             imgSize="w-[2.5rem] sm:w-[5.5rem] md:w-[6.5rem] lg:w-[7.5rem]"
           />
-        </div>
+        {/* </div> */}
       </div>
       <Footer />
     </div>
